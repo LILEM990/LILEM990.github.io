@@ -159,235 +159,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h1 id="1-1-数据库系统概述"><a href="#1-1-数据库系统概述" class="headerlink" title="1.1 数据库系统概述"></a>1.1 数据库系统概述</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><h3 id="一，4位图灵奖得主"><a href="#一，4位图灵奖得主" class="headerlink" title="一，4位图灵奖得主"></a>一，4位图灵奖得主</h3><blockquote>
-<p><strong>1.网状数据库之父</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1.png" alt="1"></p>
-<blockquote>
-<p><strong>2.关系数据库之父</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582513687216.png" alt="2"></p>
-<blockquote>
-<p><strong>3.关系数据库设计</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582513635601.png" alt="1582513635601"></p>
-<blockquote>
-<p><strong>4.大数据之父</strong>     <strong>现代主流数据库系统奠基人</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582513739178.png" alt="1582513739178"></p>
-<h3 id="二，我国数据库发展"><a href="#二，我国数据库发展" class="headerlink" title="二，我国数据库发展"></a>二，我国数据库发展</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582513834623.png" alt="1582513834623"></p>
-<h2 id="数据库的四个基本概念"><a href="#数据库的四个基本概念" class="headerlink" title="数据库的四个基本概念"></a>数据库的四个基本概念</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514028137.png" alt="1582514028137"></p>
-<h3 id="1-1-数据"><a href="#1-1-数据" class="headerlink" title="1.1  数据"></a>1.1  数据</h3><blockquote>
-<p><strong>数据是数据库中存储的基本对象</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514091196.png" alt="1582514091196"></p>
-<blockquote>
-<p><strong>数据离不开语义的支持</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514120043.png" alt="1582514120043"></p>
-<blockquote>
-<p><strong>记录是计算机存储数据的方法</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514149030.png" alt="1582514149030"></p>
-<h3 id="1-2-数据库-（DB）"><a href="#1-2-数据库-（DB）" class="headerlink" title="1.2 数据库 （DB）"></a>1.2 数据库 （DB）</h3><blockquote>
-<p><strong>数据库是数据的集合</strong></p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514305914.png" alt="1582514305914"></p>
-<h3 id="1-3-数据库管理系统-（DBMS）"><a href="#1-3-数据库管理系统-（DBMS）" class="headerlink" title="1.3 数据库管理系统 （DBMS）"></a>1.3 数据库管理系统 （DBMS）</h3><blockquote>
-<p>是位于用户应用与操作系统直接的管理软件</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514548751.png" alt="1582514548751"></p>
-<blockquote>
-<p>平时我们使用的MySql，SqlServer等都是DBMS</p>
-</blockquote>
-<h4 id="1-3-1-DBMS应该包含的主要功能"><a href="#1-3-1-DBMS应该包含的主要功能" class="headerlink" title="1.3.1 DBMS应该包含的主要功能"></a>1.3.1 DBMS应该包含的主要功能</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582683272614.png" alt="1582683272614"></p>
-<ol>
-<li>DDL 数据定义语言</li>
-</ol>
-<p>​        <img src="/2022/01/15/dataBaseNotes-Chapter1/1582514874498.png" alt="1582514874498"></p>
-<ol start="2">
-<li>DML 数据操纵语言</li>
-</ol>
-<p>​       <img src="/2022/01/15/dataBaseNotes-Chapter1/1582514898396.png" alt="1582514898396"></p>
-<ol start="3">
-<li><p>DCL 数据控制语言</p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514937691.png" alt="1582514937691"></p>
-</li>
-</ol>
-<p>其他相关功能汇总：</p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582514980190.png" alt="1582514980190"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515004055.png" alt="1582515004055"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515072904.png" alt="1582515072904"></p>
-<h3 id="1-4-数据库系统（DBS）"><a href="#1-4-数据库系统（DBS）" class="headerlink" title="1.4 数据库系统（DBS）"></a>1.4 数据库系统（DBS）</h3><blockquote>
-<p><strong>数据库系统（Data Base System，DBS）是实现有组织的、动态地存储大量关联数据、方便多用户访问的计算机软件、硬件和数据资源组成的系统，简化为：DBS=计算机系统（硬件、软件平台、人）+DBMS+DB</strong></p>
-</blockquote>
-<blockquote>
-<p>　<strong>数据库系统是由数据库，数据管理系统（及其应用开发工具），应用程序和数据库管理员（DBA）组成的存储，管理，处和维护数据的系统</strong></p>
-</blockquote>
-<blockquote>
-<p>　<strong>在一般不引起混淆的情况下，人们常常把数据库系统简称为数据库</strong></p>
-</blockquote>
-<h3 id="2-数据库系统组成"><a href="#2-数据库系统组成" class="headerlink" title="2 数据库系统组成"></a>2 数据库系统组成</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515148797.png" alt="1582515148797"></p>
-<h2 id="数据技术的产生"><a href="#数据技术的产生" class="headerlink" title="数据技术的产生"></a>数据技术的产生</h2><blockquote>
-<p>什么是数据管理</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515236837.png" alt="1582515236837"></p>
-<blockquote>
-<p>数据管理系统发展过程</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515260534.png" alt="1582515260534"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515274724.png" alt="1582515274724"></p>
-<h3 id="1-结构化的发展"><a href="#1-结构化的发展" class="headerlink" title="1 结构化的发展"></a>1 结构化的发展</h3><ul>
-<li>人工管理阶段：无结构</li>
-<li>文件系统阶段：记录结构化，文件与文件间无结构化</li>
-<li>数据库系统阶段：整体结构化</li>
-</ul>
-<h3 id="2-人工管理阶段"><a href="#2-人工管理阶段" class="headerlink" title="2 人工管理阶段"></a>2 人工管理阶段</h3><blockquote>
-<p>一 一对应</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515775080.png" alt="1582515775080"></p>
-<h4 id="2-1-特点"><a href="#2-1-特点" class="headerlink" title="2.1 特点"></a>2.1 特点</h4><ol>
-<li>数据不保存</li>
-<li>应用程序管理数据</li>
-<li>数据不共享</li>
-<li>数据不具有独立性</li>
-</ol>
-<h3 id="3-文件系统阶段"><a href="#3-文件系统阶段" class="headerlink" title="3 文件系统阶段"></a>3 文件系统阶段</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515823236.png" alt="1582515823236"></p>
-<h4 id="3-1-特点"><a href="#3-1-特点" class="headerlink" title="3.1 特点"></a>3.1 特点</h4><ol>
-<li>数据可以长期保存</li>
-<li>由文件系统管理数据</li>
-</ol>
-<h4 id="3-2-缺点"><a href="#3-2-缺点" class="headerlink" title="3.2 缺点"></a>3.2 缺点</h4><ol>
-<li>数据共享性差，冗余度大</li>
-<li>数据独立性差</li>
-</ol>
-<h3 id="4-数据库系统阶段"><a href="#4-数据库系统阶段" class="headerlink" title="4 数据库系统阶段"></a>4 数据库系统阶段</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582515853839.png" alt="1582515853839"></p>
-<h4 id="4-1-特点"><a href="#4-1-特点" class="headerlink" title="4.1 特点"></a>4.1 特点</h4><ol>
-<li>数据结构化</li>
-<li>数据共享性高，冗余度低且易扩充</li>
-<li>数据独立性高</li>
-<li>数据由数据管理系统统一管理和控制</li>
-</ol>
-<h2 id="数据系统的特点"><a href="#数据系统的特点" class="headerlink" title="数据系统的特点"></a>数据系统的特点</h2><h3 id="文件系统和数据库系统的对比"><a href="#文件系统和数据库系统的对比" class="headerlink" title="文件系统和数据库系统的对比"></a>文件系统和数据库系统的对比</h3><p>文件系统：<img src="/2022/01/15/dataBaseNotes-Chapter1/1582515997338.png" alt="1582515997338"></p>
-<p>查询和查找需要单独程序 ：<img src="/2022/01/15/dataBaseNotes-Chapter1/1582516031349.png" alt="1582516031349"></p>
-<p>数据库系统：<img src="/2022/01/15/dataBaseNotes-Chapter1/1582516049998.png" alt="1582516049998"></p>
-<p>程序员可以专注于数据</p>
-<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516104342.png" alt="1582516104342"></p>
-<h4 id="1-结构化"><a href="#1-结构化" class="headerlink" title="1 结构化"></a>1 结构化</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516189906.png" alt="1582516189906"></p>
-<h4 id="2-共享性高-冗余度低-容易扩充"><a href="#2-共享性高-冗余度低-容易扩充" class="headerlink" title="2 共享性高 冗余度低 容易扩充"></a>2 共享性高 冗余度低 容易扩充</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516235365.png" alt="1582516235365"></p>
-<h4 id="3-数据的独立性"><a href="#3-数据的独立性" class="headerlink" title="3 数据的独立性"></a>3 数据的独立性</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516286253.png" alt="1582516286253"></p>
-<h4 id="4-数据由数据管理系统统一管理和控制"><a href="#4-数据由数据管理系统统一管理和控制" class="headerlink" title="4 数据由数据管理系统统一管理和控制"></a>4 数据由数据管理系统统一管理和控制</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516372339.png" alt="1582516372339"></p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582516428866.png" alt="1582516428866"></p>
-<h1 id="1-2-数据模型"><a href="#1-2-数据模型" class="headerlink" title="1.2 数据模型"></a>1.2 数据模型</h1><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519196143.png" alt="1582519196143"></p>
-<h2 id="1-2-1-两类数据模型"><a href="#1-2-1-两类数据模型" class="headerlink" title="1.2.1 两类数据模型"></a>1.2.1 两类数据模型</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519256555.png" alt="1582519256555"></p>
-<blockquote>
-<p>数据模型构建过程</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519379789.png" alt="1582519379789"></p>
-<h2 id="1-2-2-概念模型"><a href="#1-2-2-概念模型" class="headerlink" title="1.2.2 概念模型"></a>1.2.2 概念模型</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519480273.png" alt="1582519480273"></p>
-<h3 id="1-信息世界中的基本概念"><a href="#1-信息世界中的基本概念" class="headerlink" title="1 信息世界中的基本概念"></a>1 信息世界中的基本概念</h3><ol>
-<li>实体</li>
-<li>属性</li>
-<li>码（主键）</li>
-<li>实体型</li>
-<li>实体集</li>
-<li>联系</li>
-</ol>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519593052.png" alt="1582519593052"></p>
-<blockquote>
-<p>例如：学生（包括他的所以属性）是一个实体型  </p>
-<p>​            所有学生是一个实体集</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519665755.png" alt="1582519665755"></p>
-<blockquote>
-<p>例如：A是课程，B是学生    属于多对多的联系</p>
-</blockquote>
-<h3 id="2-概念模型表示方法"><a href="#2-概念模型表示方法" class="headerlink" title="2 概念模型表示方法"></a>2 概念模型表示方法</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519876134.png" alt="1582519876134"></p>
-<h2 id="1-2-3-数据模型的组成要素"><a href="#1-2-3-数据模型的组成要素" class="headerlink" title="1.2.3 数据模型的组成要素"></a>1.2.3 数据模型的组成要素</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519967954.png" alt="1582519967954"></p>
-<h3 id="1-数据结构"><a href="#1-数据结构" class="headerlink" title="1 数据结构"></a>1 数据结构</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582519986634.png" alt="1582519986634"></p>
-<h3 id="2-数据操作"><a href="#2-数据操作" class="headerlink" title="2 数据操作"></a>2 数据操作</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582520121108.png" alt="1582520121108"></p>
-<h3 id="3-数据的完整性约束条件"><a href="#3-数据的完整性约束条件" class="headerlink" title="3 数据的完整性约束条件"></a>3 数据的完整性约束条件</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582520289120.png" alt="1582520289120"></p>
-<blockquote>
-<p>分割线</p>
-</blockquote>
-<h2 id="1-2-4-常用的数据模型"><a href="#1-2-4-常用的数据模型" class="headerlink" title="1.2.4 常用的数据模型"></a>1.2.4 常用的数据模型</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582683733113.png" alt="1582683733113"></p>
-<h2 id="1-2-5-层次模型"><a href="#1-2-5-层次模型" class="headerlink" title="1.2.5 层次模型"></a>1.2.5 层次模型</h2><blockquote>
-<p>树模型</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582683919427.png" alt="1582683919427"></p>
-<h3 id="1-层次模型的数据结构"><a href="#1-层次模型的数据结构" class="headerlink" title="1 层次模型的数据结构"></a>1 层次模型的数据结构</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582683991250.png" alt="1582683991250"></p>
-<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684102069.png" alt="1582684102069"></p>
-<blockquote>
-<p>左是型    右是值</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582685098416.png" alt="1582685098416"></p>
-<blockquote>
-<p>虚记录（虚指针）打破了一对多的关系</p>
-</blockquote>
-<h3 id="2-层次模型的数据操纵与完整性约束"><a href="#2-层次模型的数据操纵与完整性约束" class="headerlink" title="2 层次模型的数据操纵与完整性约束"></a>2 层次模型的数据操纵与完整性约束</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684208973.png" alt="1582684208973"></p>
-<h3 id="3-层次模型的优缺点"><a href="#3-层次模型的优缺点" class="headerlink" title="3 层次模型的优缺点"></a>3 层次模型的优缺点</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684277280.png" alt="1582684277280"></p>
-<blockquote>
-<p>优点：层次关系密切</p>
-<p>缺点：表现不了多对多</p>
-<p>​            根结点无双亲</p>
-</blockquote>
-<h2 id="1-2-6-网状模型"><a href="#1-2-6-网状模型" class="headerlink" title="1.2.6 网状模型"></a>1.2.6 网状模型</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684340629.png" alt="1582684340629"></p>
-<h3 id="1-网状模型的数据结构"><a href="#1-网状模型的数据结构" class="headerlink" title="1 网状模型的数据结构"></a>1 网状模型的数据结构</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684401032.png" alt="1582684401032"></p>
-<h4 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582685067170.png" alt="1582685067170"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684461805.png" alt="1582684461805"></p>
-<h4 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582685269662.png" alt="1582685269662"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582685281563.png" alt="1582685281563"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686081187.png" alt="1582686081187"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686055216.png" alt="1582686055216"></p>
-<h3 id="2-网状模型的数据操纵与完整性约束"><a href="#2-网状模型的数据操纵与完整性约束" class="headerlink" title="2 网状模型的数据操纵与完整性约束"></a>2 网状模型的数据操纵与完整性约束</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684709872.png" alt="1582684709872"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684613843.png" alt="1582684613843"></p>
-<h3 id="3-网状模型的优缺点"><a href="#3-网状模型的优缺点" class="headerlink" title="3 网状模型的优缺点"></a>3 网状模型的优缺点</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684658918.png" alt="1582684658918"></p>
-<blockquote>
-<p>优点：</p>
-<p>缺点：数据量大的时候，程序员工作量很大，数据库系统的好坏取决与程序员水平高低</p>
-</blockquote>
-<h2 id="1-2-7-关系模型"><a href="#1-2-7-关系模型" class="headerlink" title="1.2.7 关系模型"></a>1.2.7 关系模型</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582684915800.png" alt="1582684915800"></p>
-<h3 id="1-关系模型的数据结构"><a href="#1-关系模型的数据结构" class="headerlink" title="1 关系模型的数据结构"></a>1 关系模型的数据结构</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686236138.png" alt="1582686236138"></p>
-<h4 id="术语介绍"><a href="#术语介绍" class="headerlink" title="术语介绍"></a>术语介绍</h4><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686257718.png" alt="1582686257718"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686427906.png" alt="1582686427906"></p>
-<h4 id="规范条件"><a href="#规范条件" class="headerlink" title="规范条件"></a>规范条件</h4><blockquote>
-<p>不可以“表中有表”</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686352191.png" alt="1582686352191"></p>
-<h3 id="2-关系模型的操纵与完整性约束"><a href="#2-关系模型的操纵与完整性约束" class="headerlink" title="2 关系模型的操纵与完整性约束"></a>2 关系模型的操纵与完整性约束</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686467262.png" alt="1582686467262"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686491487.png" alt="1582686491487"></p>
-<h3 id="3-关系模型的优缺点"><a href="#3-关系模型的优缺点" class="headerlink" title="3 关系模型的优缺点"></a>3 关系模型的优缺点</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686591597.png" alt="1582686591597"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582686613328.png" alt="1582686613328"></p>
-<h1 id="1-3-数据库系统的结构"><a href="#1-3-数据库系统的结构" class="headerlink" title="1.3 数据库系统的结构"></a>1.3 数据库系统的结构</h1><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582688916542.png" alt="1582688916542"></p>
-<h2 id="1-3-1-数据库系统模式的概念"><a href="#1-3-1-数据库系统模式的概念" class="headerlink" title="1.3.1 数据库系统模式的概念"></a>1.3.1 数据库系统模式的概念</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582688983935.png" alt="1582688983935"></p>
-<h3 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689035763.png" alt="1582689035763"></p>
-<blockquote>
-<p>数据不一样，模式相同</p>
-</blockquote>
-<h2 id="1-3-2-数据库系统的三级模式结构"><a href="#1-3-2-数据库系统的三级模式结构" class="headerlink" title="1.3.2 数据库系统的三级模式结构"></a>1.3.2 数据库系统的三级模式结构</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689082595.png" alt="1582689082595"></p>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583108750027.png" alt="1583108750027"></p>
-<h3 id="1-模式"><a href="#1-模式" class="headerlink" title="1 模式"></a>1 模式</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689184500.png" alt="1582689184500"></p>
-<h3 id="2-外模式"><a href="#2-外模式" class="headerlink" title="2 外模式"></a>2 外模式</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689277932.png" alt="1582689277932"></p>
-<blockquote>
-<p>用户只能看见外模式，看不见模式</p>
-</blockquote>
-<h3 id="3-内模式"><a href="#3-内模式" class="headerlink" title="3 内模式"></a>3 内模式</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689356453.png" alt="1582689356453"></p>
-<h2 id="1-3-3-数据库的二级映像功能与数据独立性"><a href="#1-3-3-数据库的二级映像功能与数据独立性" class="headerlink" title="1.3.3 数据库的二级映像功能与数据独立性"></a>1.3.3 数据库的二级映像功能与数据独立性</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689438989.png" alt="1582689438989"></p>
-<h3 id="1-外模式-模式映像"><a href="#1-外模式-模式映像" class="headerlink" title="1 外模式/模式映像"></a>1 外模式/模式映像</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689501920.png" alt="1582689501920"></p>
-<h3 id="2-模式-内模式映像"><a href="#2-模式-内模式映像" class="headerlink" title="2 模式/内模式映像"></a>2 模式/内模式映像</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689580434.png" alt="1582689580434"></p>
-<h3 id="3-数据库的二级映像功能与数据独立性"><a href="#3-数据库的二级映像功能与数据独立性" class="headerlink" title="3 数据库的二级映像功能与数据独立性"></a>3 数据库的二级映像功能与数据独立性</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1582689660797.png" alt="1582689660797"></p>
-<h1 id="1-4-数据库系统的组成"><a href="#1-4-数据库系统的组成" class="headerlink" title="1.4 数据库系统的组成"></a>1.4 数据库系统的组成</h1><h2 id="1-硬件平台及数据库"><a href="#1-硬件平台及数据库" class="headerlink" title="1 硬件平台及数据库"></a>1 硬件平台及数据库</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118091147.png" alt="1583118091147"></p>
-<h2 id="2-软件"><a href="#2-软件" class="headerlink" title="2 软件"></a>2 软件</h2><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118191227.png" alt="1583118191227"></p>
-<h2 id="3-人员"><a href="#3-人员" class="headerlink" title="3 人员"></a>3 人员</h2><p>数据库用户的组成：</p>
-<blockquote>
-<p>数据库管理员，系统分析员和数据库设计人员，应用程序员，用户</p>
-</blockquote>
-<p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118223153.png" alt="1583118223153"></p>
-<h3 id="1-数据库管理员"><a href="#1-数据库管理员" class="headerlink" title="1 数据库管理员"></a>1 数据库管理员</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118372113.png" alt="1583118372113"></p>
-<h3 id="2-系统分析员、数据库设计人员"><a href="#2-系统分析员、数据库设计人员" class="headerlink" title="2 系统分析员、数据库设计人员"></a>2 系统分析员、数据库设计人员</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118505533.png" alt="1583118505533"></p>
-<h3 id="3-应用程序员"><a href="#3-应用程序员" class="headerlink" title="3 应用程序员"></a>3 应用程序员</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118515823.png" alt="1583118515823"></p>
-<h3 id="4-用户"><a href="#4-用户" class="headerlink" title="4 用户"></a>4 用户</h3><p><img src="/2022/01/15/dataBaseNotes-Chapter1/1583118536159.png" alt="1583118536159"></p>
-
+        <h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><p>考研初试结束，趁着难得的假期可以学一学自己想学的东西，整理一下本科前几年的学习笔记，顺便也当复习。若是有幸进复试，数据库这门课也是复试科目之一。**<em>总之，不要停下你前进的脚步。**</em></p>
+        
+          <a class="article-more-a" href="/2022/01/15/dataBaseNotes-Chapter1/#more">more >></a>
+        
       
 
       
@@ -1300,6 +1075,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">做题记录</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考研</a>
               </li>
              
@@ -1309,14 +1092,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数学</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">做题记录</a>
               </li>
              
               <li class="article-tag-list-item">
