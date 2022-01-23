@@ -6,18 +6,48 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>柚夏的博客</title>
+  <title>数据库笔记_第10章 | 柚夏的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="软件工程在读本科生，在此记录点点博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="柚夏的博客">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+  <meta name="description" content="第十章数据库恢复技术 当时讲到这里就换了老师 不过也不算繁难章节 新老师讲的一般，没仔细听也没错过重要章节">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库笔记_第10章">
+<meta property="og:url" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/index.html">
 <meta property="og:site_name" content="柚夏的博客">
-<meta property="og:description" content="软件工程在读本科生，在此记录点点博客">
+<meta property="og:description" content="第十章数据库恢复技术 当时讲到这里就换了老师 不过也不算繁难章节 新老师讲的一般，没仔细听也没错过重要章节">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156326419.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156351331.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156409835.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156485742.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156547085.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156558477.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156648989.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156747220.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156881695.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156905605.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157008551.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157094476.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157108478.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157130981.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157186082.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157295272.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157302629.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157310367.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157317183.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157323720.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157330124.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157339959.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157348575.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157808330.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157816795.png">
+<meta property="og:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589157825093.png">
+<meta property="article:published_time" content="2022-01-23T02:13:29.000Z">
+<meta property="article:modified_time" content="2022-01-23T02:16:59.549Z">
 <meta property="article:author" content="柚夏">
-<meta property="article:tag" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
+<meta property="article:tag" content="笔记整理">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/01/23/dataBaseNotes-Chapter10/1589156326419.png">
   
     <link rel="alternative" href="/atom.xml" title="柚夏的博客" type="application/atom+xml">
   
@@ -137,796 +167,70 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-mathNotes-2021-0313" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-dataBaseNotes-Chapter10" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/13/mathNotes-2021-0313/">数学笔记整理_第9讲</a>
+    <h1 class="article-title" itemprop="name">
+      数据库笔记_第10章
     </h1>
   
 
         
-        <a href="/2021/03/13/mathNotes-2021-0313/" class="archive-article-date">
-  	<time datetime="2021-03-13T13:12:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-13</time>
+        <a href="/2022/01/23/dataBaseNotes-Chapter10/" class="archive-article-date">
+  	<time datetime="2022-01-23T02:13:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第九讲-一元函数积分学的几何应用"><a href="#第九讲-一元函数积分学的几何应用" class="headerlink" title="第九讲_一元函数积分学的几何应用"></a>第九讲_一元函数积分学的几何应用</h1><p>第九讲简单到我甚至觉得没有必要单开一章……直接和第八章一起就行</p>
-<p>简单的积分计算</p>
-        
-          <a class="article-more-a" href="/2021/03/13/mathNotes-2021-0313/#more">more >></a>
-        
-      
+        <h1 id="第十章"><a href="#第十章" class="headerlink" title="第十章"></a>第十章</h1><h1 id="数据库恢复技术"><a href="#数据库恢复技术" class="headerlink" title="数据库恢复技术"></a>数据库恢复技术</h1><blockquote>
+<p>当时讲到这里就换了老师</p>
+<p>不过也不算繁难章节</p>
+<p>新老师讲的一般，没仔细听也没错过重要章节</p>
+</blockquote>
+<a id="more"></a>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/13/mathNotes-2021-0313/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0310" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/10/mathNotes-2021-0310/">数学笔记整理_第8讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/10/mathNotes-2021-0310/" class="archive-article-date">
-  	<time datetime="2021-03-10T08:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第八讲-一元函数积分学的概念与计算"><a href="#第八讲-一元函数积分学的概念与计算" class="headerlink" title="第八讲_一元函数积分学的概念与计算"></a>第八讲_一元函数积分学的概念与计算</h1><p>终于复习完积分学了</p>
-<p>为什么要说终于呢…</p>
-        
-          <a class="article-more-a" href="/2021/03/10/mathNotes-2021-0310/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/10/mathNotes-2021-0310/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0228" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/28/mathNotes-2021-0228/">数学笔记整理_第7讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/28/mathNotes-2021-0228/" class="archive-article-date">
-  	<time datetime="2021-02-28T12:53:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第七讲-零点问题与微分不等式"><a href="#第七讲-零点问题与微分不等式" class="headerlink" title="第七讲_零点问题与微分不等式"></a>第七讲_零点问题与微分不等式</h1><p>一元函数微分学的收官之作</p>
-<p>最近心很毛躁</p>
-<p>进度也慢……</p>
-        
-          <a class="article-more-a" href="/2021/02/28/mathNotes-2021-0228/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/28/mathNotes-2021-0228/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0225" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/25/mathNotes-2021-0225/">数学笔记整理_第6讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/25/mathNotes-2021-0225/" class="archive-article-date">
-  	<time datetime="2021-02-25T03:04:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第六讲-中值定理"><a href="#第六讲-中值定理" class="headerlink" title="第六讲_中值定理"></a>第六讲_中值定理</h1><p>磨磨蹭蹭开始了第六讲的复习，这一章是真的难，听课时候基本都能懂，整理完思路后去做题还是有一半的题不会做</p>
-<p>不过凭直觉，这种题就是套路问题，见得多了总结的多了自然就不是问题了</p>
-<p>在接受范围内</p>
-        
-          <a class="article-more-a" href="/2021/02/25/mathNotes-2021-0225/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/25/mathNotes-2021-0225/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0220" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/20/mathNotes-2021-0220/">数学笔记整理_第5讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/20/mathNotes-2021-0220/" class="archive-article-date">
-  	<time datetime="2021-02-20T03:25:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第五讲-一元函数微分学的几何应用"><a href="#第五讲-一元函数微分学的几何应用" class="headerlink" title="第五讲_一元函数微分学的几何应用"></a>第五讲_一元函数微分学的几何应用</h1><p>前几天是农历春节，其实第五讲的课过年前一周就听完了，但是年前帮家里备年货再加上东跑西跑的。。。过完年才做了第五讲的题整理了笔记。</p>
-        
-          <a class="article-more-a" href="/2021/02/20/mathNotes-2021-0220/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/20/mathNotes-2021-0220/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0204" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/04/mathNotes-2021-0204/">数学笔记整理_第4讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/04/mathNotes-2021-0204/" class="archive-article-date">
-  	<time datetime="2021-02-04T13:04:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第四讲-一元函数微分学"><a href="#第四讲-一元函数微分学" class="headerlink" title="第四讲_一元函数微分学"></a>第四讲_一元函数微分学</h1><h2 id="小年快乐"><a href="#小年快乐" class="headerlink" title="小年快乐~"></a>小年快乐~</h2><p>今天是农历腊月二十三，家乡的习俗叫 <strong>“祭灶”</strong> 也叫过小年，多么有意义的一天，结束了第四讲的学习（手动狗头）</p>
-        
-          <a class="article-more-a" href="/2021/02/04/mathNotes-2021-0204/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/04/mathNotes-2021-0204/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-LeetCode-exercise-2021-0203" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/03/LeetCode-exercise-2021-0203/">做题记录_(210203)</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/03/LeetCode-exercise-2021-0203/" class="archive-article-date">
-  	<time datetime="2021-02-03T13:11:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="2021-02-03做题记录"><a href="#2021-02-03做题记录" class="headerlink" title="2021/02/03做题记录"></a>2021/02/03做题记录</h1><p>依旧是数组的题，这次使用的是双指针的方法</p>
-<p>老规矩我们先看一下题：</p>
+<h2 id="事务的基本概念"><a href="#事务的基本概念" class="headerlink" title="事务的基本概念"></a>事务的基本概念</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156326419.png" alt="1589156326419"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156351331.png" alt="1589156351331"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156409835.png" alt="1589156409835"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156485742.png" alt="1589156485742"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156547085.png" alt="1589156547085"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156558477.png" alt="1589156558477"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156648989.png" alt="1589156648989"></p>
 <blockquote>
-<p>给你 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p>
-<p>说明：你不能倾斜容器。</p></blockquote>
-        
-          <a class="article-more-a" href="/2021/02/03/LeetCode-exercise-2021-0203/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">做题记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/03/LeetCode-exercise-2021-0203/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0131" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/31/mathNotes-2021-0131/">数学笔记整理_第3讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/31/mathNotes-2021-0131/" class="archive-article-date">
-  	<time datetime="2021-01-31T12:49:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第三讲-函数极限"><a href="#第三讲-函数极限" class="headerlink" title="第三讲_函数极限"></a>第三讲_函数极限</h1><p>这周闲事多了一些······本来计划三天完成的第三讲的复习，硬是拖了将近一周</p>
-<p>不过也还好，课后13道习题倒是都做对了，应该可能大概也许指不定能说明这章学的还凑合</p>
-<p>现整理一下笔记如下：</p>
-        
-          <a class="article-more-a" href="/2021/01/31/mathNotes-2021-0131/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">笔记整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/31/mathNotes-2021-0131/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-LeetCode-exercise-2021-0130" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/30/LeetCode-exercise-2021-0130/">做题记录_(210130)</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/30/LeetCode-exercise-2021-0130/" class="archive-article-date">
-  	<time datetime="2021-01-30T05:07:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="2021-01-30做题记录"><a href="#2021-01-30做题记录" class="headerlink" title="2021/01/30做题记录"></a>2021/01/30做题记录</h1><p>今天做的数组第四题，老规矩我们先看一下题;</p>
+<p>事务是原子操作</p>
+</blockquote>
+<h2 id="数据库恢复概述"><a href="#数据库恢复概述" class="headerlink" title="数据库恢复概述"></a>数据库恢复概述</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156747220.png" alt="1589156747220"></p>
+<h2 id="故障的种类"><a href="#故障的种类" class="headerlink" title="故障的种类"></a>故障的种类</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156881695.png" alt="1589156881695"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589156905605.png" alt="1589156905605"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157008551.png" alt="1589157008551"></p>
+<h2 id="恢复的实现技术"><a href="#恢复的实现技术" class="headerlink" title="恢复的实现技术"></a>恢复的实现技术</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157094476.png" alt="1589157094476"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157108478.png" alt="1589157108478"></p>
 <blockquote>
-<p>给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数。</p>
-<p>进阶：你能设计一个时间复杂度为 O(log (m+n)) 的算法解决此问题吗？</p></blockquote>
-        
-          <a class="article-more-a" href="/2021/01/30/LeetCode-exercise-2021-0130/#more">more >></a>
-        
-      
+<p>简单说就是备份</p>
+<p>如果其他事件还能执行就是动态，否则是静态</p>
+</blockquote>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157130981.png" alt="1589157130981"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157186082.png" alt="1589157186082"></p>
+<blockquote>
+<p>只包含更新（增删改），不包含查询</p>
+</blockquote>
+<h2 id="恢复的策略"><a href="#恢复的策略" class="headerlink" title="恢复的策略"></a>恢复的策略</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157295272.png" alt="1589157295272"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157302629.png" alt="1589157302629"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157310367.png" alt="1589157310367"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157317183.png" alt="1589157317183"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157323720.png" alt="1589157323720"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157330124.png" alt="1589157330124"></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157339959.png" alt="1589157339959"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157348575.png" alt="1589157348575"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157808330.png" alt="1589157808330"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157816795.png" alt="1589157816795"></p>
+<p><img src="/2022/01/23/dataBaseNotes-Chapter10/1589157825093.png" alt="1589157825093"></p>
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">做题记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/30/LeetCode-exercise-2021-0130/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-mathNotes-2021-0129" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/29/mathNotes-2021-0129/">数学笔记整理_第2讲</a>
-    </h1>
-  
-
-        
-        <a href="/2021/01/29/mathNotes-2021-0129/" class="archive-article-date">
-  	<time datetime="2021-01-29T04:39:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="数学笔记整理"><a href="#数学笔记整理" class="headerlink" title="数学笔记整理"></a>数学笔记整理</h1><p>考研初试数学科目跟的老师是张宇，根据复习进度整理一下笔记，大概包括做题方法总结和个人认为重要的点</p>
-<p>当一个归档记录吧</p>
-        
-          <a class="article-more-a" href="/2021/01/29/mathNotes-2021-0129/#more">more >></a>
-        
       
 
       
@@ -943,11 +247,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考研</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
         		</li>
       		
 		</ul>
@@ -956,16 +256,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/01/29/mathNotes-2021-0129/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/01/23/dataBaseNotes-Chapter10/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2022/01/22/dataBaseNotes-Chapter9/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据库笔记_第9章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -985,12 +344,14 @@
 
 
 
+  
+  
+  
 
   
+
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
-    </nav>
+
   
 
 
@@ -1013,8 +374,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
